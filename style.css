@@ -11,10 +11,25 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   overscroll-behavior: none;
+  scrollbar-width: thin;
+  scrollbar-color: #FFD166 #171219;
 }
+
+/* fundo da barra */
+::-webkit-scrollbar-track {
+  background: #171219; /* fundo escuro */
+}
+
+/* parte que se move */
+::-webkit-scrollbar-thumb {
+  background: #FFD166; /* cor principal */
+  border-radius: 8px;
+}
+
 body {
   background: var(--bg);
 }
+
 section {
   min-height: 100vh;
   padding: 6rem 4.5rem;
